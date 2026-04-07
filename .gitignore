@@ -31,7 +31,17 @@ v_env/
 env/
 
 node_modules/
-dist/
-.env
+front/node_modules/
+
+# Banco de dados
+db.sqlite3
+
+# Python/Ambiente Virtual
+venv/
+__pycache__/
+*.py[cod]
+
+# Build do React
+front/dist/
 
 .DS_Store
