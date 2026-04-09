@@ -9,7 +9,6 @@ function FormAtualizarTarefas() {
 
   const navigate = useNavigate();
 
-  let [tarefas, setTarefas] = useState<ITarefa[]>([]);
   const { id } = useParams();
   let [titulo, setTitulo] = useState("");
   let [descricao, setDescricao] = useState("");
@@ -18,7 +17,6 @@ function FormAtualizarTarefas() {
   async function getTarefas() {
     try {
       const response = await api.get("tarefas");
-      setTarefas(response.data);
       response.data.find((tarefa_da_vez: ITarefa) => {
         if (tarefa_da_vez.id === Number(id)) {
           setTitulo(tarefa_da_vez.titulo);

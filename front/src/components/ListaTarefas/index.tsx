@@ -1,6 +1,4 @@
-import { useEffect, useState } from "react";
 import type { ITarefa } from "../../types.ts";
-import api from "../../services/api.ts";
 import "./style.css";
 
 interface ListaProps {
