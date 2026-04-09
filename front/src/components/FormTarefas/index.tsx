@@ -38,7 +38,7 @@ function FormTarefas() {
           <h3 id="formShow">Formulário de Cadastro de Tarefas</h3>
           <p id="formDesc">Aqui você poderá fazer o cadastro das suas tarefas</p>
         </div>
-        <form ref={formRef} id="registerForm" method="post">
+        <form ref={formRef} onSubmit={cadastrarTask} id="registerForm" method="post">
           <div className="inputsFormater">
             <label htmlFor="name">Nome da tarefa:</label>
             <input type="text" ref={inputTaskName} placeholder="Digite o nome da tarefa..." required name="name" id="" />
@@ -48,7 +48,7 @@ function FormTarefas() {
             <input type="text" ref={inputTaskDesc} placeholder="Digite a descrição da tarefa..." name="description" id="" />
           </div>
           <div className="inputsFormater">
-            <button id="registerButton" onClick={cadastrarTask}>Cadastrar</button>
+            <button id="registerButton" type='submit'>Cadastrar</button>
           </div>
         </form>
         <div id="formButtons">
