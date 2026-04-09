@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-#homeContainer {
+.homeContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,9 +15,25 @@
     width: 100vw;
     height: 100vh;
     padding: 1rem;
+
+    & #btn_redirect {
+        padding: 0.5rem;
+        border-radius: 0.3rem;
+        border: 1px solid transparent;
+        font-family: "Poppins";
+        transition: 0.3s ease-in;
+
+        &:hover {
+            border: 1px solid #fff;
+            background-color: #000;
+            color: #fff;
+        }
+
+    }
+
 }
 
-#homeTitle {
+.homeTitle {
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -27,7 +43,7 @@
    font-family: "Poppins";
    color: #fff;
 
-    & #homeShow {
+    & .homeShow {
         font-size: 3rem;
     }
 

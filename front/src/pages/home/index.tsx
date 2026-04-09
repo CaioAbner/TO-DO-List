@@ -63,10 +63,10 @@ function Home() {
   return (
     <>
       {tarefa.length > 0
-        ? <div id="homeContainer">
-          <div id="homeTitle">
-            <h1 id="homeShow">Seja bem vindo a home</h1>
-            <p id="homeDesc">Aqui você poderá ver suas tarefas e o progresso delas</p>
+        ? <div className="homeContainer">
+          <div className="homeTitle">
+            <h1 className="homeShow">Seja bem vindo a home</h1>
+            <p className="homeDesc">Aqui você poderá ver suas tarefas e o progresso delas</p>
           </div>
           <ListaTarefas
             tarefasParaExibir={tarefa}
@@ -78,10 +78,10 @@ function Home() {
             <button title="Clique aqui caso deseje excluir uma tarefa" id="btn_delete" onClick={deletarTarefa}>Excluir Tarefa</button>
           </div>
         </div>
-        : <div id="homeContainer">
-          <h1>Seja bem vindo a home</h1>
-          <p>Você ainda não possui tarefas cadastradas.</p>
-          <button onClick={() => redirecionar("cadastrar")}>
+        : <div className="homeContainer">
+          <h1 className="homeShow">Seja bem vindo a home</h1>
+          <p className="homeDesc">Você ainda não possui tarefas cadastradas.</p>
+          <button id="btn_redirect" onClick={() => redirecionar("cadastrar")}>
             Cadastrar primeira tarefa
           </button>
         </div> }
