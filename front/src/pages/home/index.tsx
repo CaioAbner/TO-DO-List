@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import FormTarefas from "../../components/FormTarefas";
 import ListaTarefas from "../../components/ListaTarefas";
 import api from "../../services/api.ts";
 import type { ITarefa } from "../../types.ts";
