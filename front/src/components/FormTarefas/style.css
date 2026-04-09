@@ -49,7 +49,7 @@
             flex-direction: column;
             justify-content: space-between;
 
-            width: 200;
+            width: auto;
             height: auto;
             padding: 0.5rem;
             /* background-color: tan; */
