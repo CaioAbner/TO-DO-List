@@ -79,12 +79,14 @@ function Home() {
           </div>
         </div>
         : <div className="homeContainer">
-          <h1 className="homeShow">Seja bem vindo a home</h1>
-          <p className="homeDesc">Você ainda não possui tarefas cadastradas.</p>
+          <div className="homeTitle">
+            <h1 className="homeShow">Seja bem vindo a home</h1>
+            <p className="homeDesc">Você ainda não possui tarefas cadastradas.</p>
+          </div>
           <button id="btn_redirect" onClick={() => redirecionar("cadastrar")}>
             Cadastrar primeira tarefa
           </button>
-        </div> }
+        </div>}
     </>
   )
 }
