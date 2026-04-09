@@ -52,7 +52,7 @@ function FormTarefas() {
           </div>
         </form>
         <div id="formButtons">
-          <button id="btn_home" onClick={() => navigate("/home")}>Voltar para Home</button>
+          <button id="btn_home" onClick={() => navigate("/")}>Voltar para Home</button>
         </div>
       </div>
     </>

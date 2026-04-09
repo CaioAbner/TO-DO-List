@@ -46,7 +46,7 @@ function FormAtualizarTarefas() {
             concluida: concluida
           });
           alert("Parabéns, sua tarefa foi atualizada.");
-          navigate("/home");
+          navigate("/");
         } catch (error) {
           console.error("Não foi possível atualizar a tarefa.", error);
           alert("Não foi possível atualizar a tarefa.")
@@ -92,7 +92,7 @@ function FormAtualizarTarefas() {
           </div>
         </form>
         <div id="formButtons">
-          <button id="btn_home" onClick={() => navigate("/home")}>Voltar para Home</button>
+          <button id="btn_home" onClick={() => navigate("/")}>Voltar para Home</button>
         </div>
       </div>
     </>
