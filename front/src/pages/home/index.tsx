@@ -70,16 +70,22 @@ function Home() {
             <p id="homeDesc">Aqui você poderá ver suas tarefas e o progresso delas</p>
           </div>
           <ListaTarefas
-          tarefasParaExibir={tarefa}
-          escolherAtualizar={setIdSelecionado}
-          idAtivo={idSelecionado} />
+            tarefasParaExibir={tarefa}
+            escolherAtualizar={setIdSelecionado}
+            idAtivo={idSelecionado} />
           <div id="homeButtons">
             <button title="Clique aqui caso deseje adicionar uma nova tarefa" id="btn_form" onClick={() => redirecionar("cadastrar")}>Cadastrar Tarefa</button>
             <button title="Clique aqui caso deseje atualizar uma tarefa" id="btn_updt" onClick={selecionarAtualizar}>Atualizar Tarefa</button>
             <button title="Clique aqui caso deseje excluir uma tarefa" id="btn_delete" onClick={deletarTarefa}>Excluir Tarefa</button>
           </div>
         </div>
-        : <FormTarefas />}
+        : <div id="homeContainer">
+          <h1>Seja bem vindo a home</h1>
+          <p>Você ainda não possui tarefas cadastradas.</p>
+          <button onClick={() => redirecionar("cadastrar")}>
+            Cadastrar primeira tarefa
+          </button>
+        </div> }
     </>
   )
 }
