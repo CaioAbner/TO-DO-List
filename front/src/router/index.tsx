@@ -8,7 +8,7 @@ function Router() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home/>}></Route>
+        <Route path="/home" element={<Home/>}></Route>
         <Route path="/cadastrar" element={<FormTarefas/>}></Route>
         <Route path="/atualizar/:id" element={<FormAtualizarTarefas/>}></Route>
       </Routes>
